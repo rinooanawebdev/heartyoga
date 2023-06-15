@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'PT Serif', serif; 
+    font-family: 'Scope One', serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    margin: 50px 100px;
+    flex: 1 0 auto;
+    padding-top: 50px;
+}
+/* header & nav */
+header {
+    background: #ffffff00;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top:0;
+    margin-top:0;
+  
+}
+
+header h1 {
+    color: #000;
+    margin: 20px;
+}
+
+
+
+header a:link {
+    color: #000;
+    text-decoration: none;
+    
+}
+
+
+header a:active {
+    text-decoration: underline;
+}
+header nav ul {
+    list-style-type: none;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    margin: 0;
+    padding: 10px;
+    transition: left 0.1s;
+    position: static;
+    background-color: transparent;
+}
+
+header nav li {
+    display: inline-block;
+}
+
+header nav ul a {
+    display: block;
+    padding: 10px;
+}
+
+header a:visited {
+    color: var(--text-and-icons);
+}
+
+header a:hover {
+    color: var(--divider-colour);
+} 
+
+
+
+
+
+/* posts.php */
+.addpostlogo a{
+    font-size: xx-large;
+}
+
+
+::placeholder {
+    color: grey;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: grey
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: grey;
+    color: #feba61;
+  }
+
